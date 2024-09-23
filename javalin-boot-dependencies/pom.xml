@@ -326,7 +326,7 @@
         <prometheus.version>1.3.1</prometheus.version>
         <prometheus-client.version.version>1.3.1</prometheus-client.version.version>
         <prometheus-sampleclient.version>0.16.0</prometheus-sampleclient.version>
-        <protobuf.version>3.19.6</protobuf.version>
+        <protobuf.version>4.28.2</protobuf.version>
         <proxool.version>0.9.1</proxool.version>
         <pinyin4j.version>2.5.1</pinyin4j.version>
         <pf4j.version>3.12.0</pf4j.version>
@@ -373,19 +373,6 @@
         <sfntly.version>1.0.0</sfntly.version>
         <shardingsphere.version>5.5.0</shardingsphere.version>
         <shedlock.version>5.16.0</shedlock.version>
-        <shiro.version>1.13.0</shiro.version>
-        <shiro-biz.version>1.2.0.RELEASE</shiro-biz.version>
-        <shiro-ehcache.version>${shiro.version}</shiro-ehcache.version>
-        <shiro-ehcache3.version>1.0.0</shiro-ehcache3.version>
-        <shiro-hazelcast.version>${shiro.version}</shiro-hazelcast.version>
-        <shiro-freemarker.version>1.0.2</shiro-freemarker.version>
-        <shiro-j2cache.version>1.0.2.RELEASE</shiro-j2cache.version>
-        <shiro-redis.version>3.3.1</shiro-redis.version>
-        <shiro-oltu.version>1.0</shiro-oltu.version>
-        <shiro-pf4j.version>1.0.1.RELEASE</shiro-pf4j.version>
-        <shiro-redisson.version>1.5.0.RELEASE</shiro-redisson.version>
-        <shiro-thymeleaf.version>2.0.0</shiro-thymeleaf.version>
-        <shiro-uaa.version>1.0.6</shiro-uaa.version>
         <sitemesh3.version>3.0.1</sitemesh3.version>
         <skywalking.version>10.0.1</skywalking.version>
         <slf4j.version>2.0.16</slf4j.version>
@@ -4774,156 +4761,6 @@
                 <groupId>net.javacrumbs.shedlock</groupId>
                 <artifactId>shedlock-provider-zookeeper-curator</artifactId>
                 <version>${shedlock.version}</version>
-            </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.apache.shiro -->
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-core</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-web</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-spring</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-cache</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-quartz</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-lang</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.github.hiwepy/shiro-biz -->
-            <dependency>
-                <groupId>com.github.hiwepy</groupId>
-                <artifactId>shiro-biz</artifactId>
-                <version>${shiro-biz.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-config-core</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-crypto-core</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-crypto-hash</artifactId>
-                <version>${shiro.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-ehcache -->
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-ehcache</artifactId>
-                <version>${shiro-ehcache.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.ehcache.integrations.shiro/shiro-ehcache3 -->
-            <dependency>
-                <groupId>org.ehcache.integrations.shiro</groupId>
-                <artifactId>shiro-ehcache3</artifactId>
-                <version>${shiro-ehcache3.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/net.mingsoft/shiro-freemarker-tags -->
-            <dependency>
-                <groupId>net.mingsoft</groupId>
-                <artifactId>shiro-freemarker-tags</artifactId>
-                <version>${shiro-freemarker.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-hazelcast -->
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-hazelcast</artifactId>
-                <version>${shiro-hazelcast.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.hiwepy</groupId>
-                <artifactId>shiro-j2cache</artifactId>
-                <version>${shiro-j2cache.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-simple</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.crazycake/shiro-redis -->
-            <dependency>
-                <groupId>org.crazycake</groupId>
-                <artifactId>shiro-redis</artifactId>
-                <version>${shiro-redis.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.apache.shiro</groupId>
-                        <artifactId>shiro-core</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.puppycrawl.tools</groupId>
-                        <artifactId>checkstyle</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.iherus.shiro/shiro-redis -->
-            <dependency>
-                <groupId>org.iherus.shiro</groupId>
-                <artifactId>shiro-redis</artifactId>
-                <version>2.5.0</version>
-            </dependency>
-            <dependency>
-                <groupId>win.zqxu.shiro</groupId>
-                <artifactId>shiro-oltu-client</artifactId>
-                <version>${shiro-oltu.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>win.zqxu.shiro</groupId>
-                <artifactId>shiro-oltu-web</artifactId>
-                <version>${shiro-oltu.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.hiwepy</groupId>
-                <artifactId>shiro-pf4j</artifactId>
-                <version>${shiro-pf4j.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.github.streamone/shiro-redisson -->
-            <dependency>
-                <groupId>com.github.streamone</groupId>
-                <artifactId>shiro-redisson</artifactId>
-                <version>${shiro-redisson.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.github.theborakompanioni/thymeleaf-extras-shiro -->
-            <!-- 使用说明参考：https://github.com/theborakompanioni/thymeleaf-extras-shiro -->
-            <dependency>
-                <groupId>com.github.theborakompanioni</groupId>
-                <artifactId>thymeleaf-extras-shiro</artifactId>
-                <version>${shiro-thymeleaf.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.github.xfslove/shiro-uaa-auth-server -->
-            <dependency>
-                <groupId>com.github.xfslove</groupId>
-                <artifactId>shiro-uaa-auth-server</artifactId>
-                <version>${shiro-uaa.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/com.github.xfslove/shiro-uaa-resource-server -->
-            <dependency>
-                <groupId>com.github.xfslove</groupId>
-                <artifactId>shiro-uaa-resource-server</artifactId>
-                <version>${shiro-uaa.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->

@@ -27,6 +27,7 @@
         <module>javalin-boot-sample-hikaricp-activemq</module>
         <module>javalin-boot-sample-hikaricp-amqp</module>
         <module>javalin-boot-sample-hikaricp-rocketmq</module>
+        <module>javalin-boot-sample-ton4j</module>
     </modules>
 
 </project>
