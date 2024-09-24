@@ -28,6 +28,7 @@
         <module>javalin-boot-sample-hikaricp-amqp</module>
         <module>javalin-boot-sample-hikaricp-rocketmq</module>
         <module>javalin-boot-sample-ton4j</module>
+        <module>javalin-boot-sample-web3j</module>
     </modules>
 
 </project>

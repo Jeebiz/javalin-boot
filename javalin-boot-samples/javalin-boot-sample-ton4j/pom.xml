@@ -12,8 +12,8 @@
     <artifactId>javalin-boot-sample-ton4j</artifactId>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -23,14 +23,14 @@
         <dependency>
             <groupId>io.github.neodix42</groupId>
             <artifactId>smartcontract</artifactId>
-            <version>0.6.0</version>
+            <version>${ton4j.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.github.neodix42/ton4j -->
         <dependency>
             <groupId>io.github.neodix42</groupId>
-            <artifactId>ton4j</artifactId>
-            <version>0.6.0</version>
+            <artifactId>tonconnect</artifactId>
+            <version>${ton4j.version}</version>
         </dependency>
+        <!--Ton4j End-->
     </dependencies>
 
 </project>
